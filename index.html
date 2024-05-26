@@ -5,23 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./styles.css">
   <title>Frontend Mentor | News homepage</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Home
-  New
-  Popular
-  Trending
-  Categories
-
+  <header class="headerContainer">
+      <div class="logo"><img src="./assets/images/logo.svg" alt="Logo w"></div>
+      <img id="iconOpen" src="./assets/images/icon-menu.svg" alt="menu icon bars">
+      <nav class="navContainer" id="navbar">
+        <div class="navBackground">
+          <img id="iconClose" src="./assets/images/icon-menu-close.svg" alt="menu icon close">
+          <ul>
+            <li>Home</li>
+            <li>New</li>
+            <li>Popular</li>
+            <li>Trending</li>
+            <li>Categories</li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+  <main>
   The Bright Future of Web 3.0?
 
   We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
@@ -50,11 +54,16 @@
 
   03
   The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
+  How the pandemic has sparked fresh opportunities.</main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  
+  <script src="./js/main.js"></script>
 </body>
 </html>

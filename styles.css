@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --SoftOrange: hsl(35, 77%, 62%);
+    --SoftRed: hsl(5, 85%, 63%);
+    --OffWhite: hsl(36, 100%, 99%);
+    --GrayishBlue: hsl(233, 8%, 79%);
+    --DarkGrayishBlue: hsl(236, 13%, 42%);
+    --VeryDarkBlue: hsl(240, 100%, 5%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+}
+
+/* ----- General Config / Grid Config ----- */
+body{
+    min-height: 100vh;
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 70px auto 50px;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+    background-color: pink;
+}
+footer{
+    grid-area: footer;
+    background-color: goldenrod;
+}
+
+/* ----- Header ----- */
+
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 70%;
+}
+.navBackground{
+    background-color: rgba(255, 255, 255);
+    width: 68%;
+    min-height: 100vh;
+    padding: 1.5rem;
+}
+.navBackground ul{
+    margin: 4.9rem 0 1rem 0;
+    text-align: left;
+}
+.navBackground ul li{
+    margin: 1.7rem 0;
+    font-size: 1.2rem;
+    font-weight:500;
+}
+.navContainer{
+    display: flex;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: end;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+    transform-origin: right;
+}
+.showNav{
+    transform: scale(1 , 1);
+}
